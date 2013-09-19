@@ -1,6 +1,7 @@
 package org.flod.web.service;
 
 import javax.inject.Inject;
+import javax.inject.Singleton;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
@@ -16,6 +17,7 @@ import org.flod.service.FlodService;
  * 
  */
 @Path("")
+@Singleton
 public class FlodWs {
 
 	@Inject
