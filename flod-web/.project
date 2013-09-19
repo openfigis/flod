@@ -3,11 +3,6 @@
 	<name>flod-web</name>
 	<comment>flod-web project</comment>
 	<projects>
-		<project>vme-configuration</project>
-		<project>figis-domain</project>
-		<project>vme-domain</project>
-		<project>vme-service-integrationtest</project>
-		<project>vme-service</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
