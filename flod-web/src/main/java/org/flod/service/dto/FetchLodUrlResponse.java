@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.vme.service.dto;
+package org.flod.service.dto;
 
 import java.net.URL;
 

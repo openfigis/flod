@@ -1,9 +1,9 @@
 /**
  * 
  */
-package org.vme.service.search.vme;
+package org.flod.service;
 
-import org.vme.service.dto.FetchLodUrlResponse;
+import org.flod.service.dto.FetchLodUrlResponse;
 
 /**
  * @author Erik van Ingen

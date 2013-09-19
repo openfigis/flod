@@ -1,4 +1,4 @@
-package org.vme.web.service;
+package org.flod.web.service;
 
 import javax.inject.Inject;
 import javax.ws.rs.GET;
@@ -8,7 +8,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import org.vme.service.search.vme.FlodService;
+import org.flod.service.FlodService;
 
 /**
  * 
