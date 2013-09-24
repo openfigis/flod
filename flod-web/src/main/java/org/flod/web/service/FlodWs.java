@@ -23,11 +23,6 @@ public class FlodWs {
 	@Inject
 	private FlodService service;
 
-	// @Inject
-	// public FlodWs(FlodService serv) {
-	// service = serv;
-	// }
-
 	/**
 	 * //www.fao.org/figis/flod/ws/codelist/asfis/code/TUN/uri
 	 * 
@@ -39,9 +34,7 @@ public class FlodWs {
 	@Path("/codelist/{codelist}/code/{code}/uri")
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response fetchLodUrl(@PathParam("codelist") String codelist, @PathParam("code") String code)
-			throws Exception {
-
+	public Response fetchLodUrl(@PathParam("codelist") String codelist, @PathParam("code") String code) {
 		return Response.status(200).entity(service.fetchLodUrl(codelist, code)).build();
 	}
 
