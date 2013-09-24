@@ -23,10 +23,10 @@ public class FlodWs {
 	@Inject
 	private FlodService service;
 
-	@Inject
-	public FlodWs(FlodService serv) {
-		service = serv;
-	}
+	// @Inject
+	// public FlodWs(FlodService serv) {
+	// service = serv;
+	// }
 
 	/**
 	 * //www.fao.org/figis/flod/ws/codelist/asfis/code/TUN/uri

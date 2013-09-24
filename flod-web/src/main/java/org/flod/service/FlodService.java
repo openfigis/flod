@@ -11,6 +11,6 @@ import org.flod.service.dto.FetchLodUrlResponse;
  */
 public interface FlodService {
 
-	public FetchLodUrlResponse fetchLodUrl(String codeList, String code) throws Exception;
+	public FetchLodUrlResponse fetchLodUrl(String codeList, String code);
 
 }
