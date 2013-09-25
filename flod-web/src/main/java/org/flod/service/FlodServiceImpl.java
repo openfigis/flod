@@ -4,6 +4,7 @@ import java.net.URL;
 import java.util.Map;
 
 import org.flod.service.dto.FetchLodUrlResponse;
+import org.flod.service.dto.FlodService;
 
 /**
  * @author Erik van Ingen

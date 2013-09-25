@@ -7,9 +7,9 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
 
-import org.flod.service.FlodService;
+import org.flod.service.dto.FetchLodUrlResponse;
+import org.flod.service.dto.FlodService;
 
 /**
  * 
@@ -31,11 +31,19 @@ public class FlodWs {
 	 * @return
 	 * @throws Exception
 	 */
-	@Path("/codelist/{codelist}/code/{code}/uri")
+
+	// @GET
+	// @Path("/codelist/{codelist}/code/{code}/uri")
+	// @Produces(MediaType.APPLICATION_JSON)
+	// public Response fetchLodUrl(@PathParam("codelist") String codelist, @PathParam("code") String code) {
+	// return Response.status(200).entity(service.fetchLodUrl(codelist, code)).build();
+	// }
+
 	@GET
+	@Path("/codelist/{codelist}/code/{code}/uri")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response fetchLodUrl(@PathParam("codelist") String codelist, @PathParam("code") String code) {
-		return Response.status(200).entity(service.fetchLodUrl(codelist, code)).build();
+	public FetchLodUrlResponse fetchLodUrl(@PathParam("codelist") String codelist, @PathParam("code") String code) {
+		return service.fetchLodUrl(codelist, code);
 	}
 
 }

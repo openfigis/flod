@@ -27,13 +27,13 @@ public class CsvFileParser {
 			myEntries = csvReader.readAll();
 			csvReader.close();
 			for (String[] row : myEntries) {
-				System.out.println(row[1]);
 				URL url = new URL(row[1]);
 				map.put(row[0], url);
 			}
 		} catch (IOException e) {
 			throw new FlodException(e);
 		}
+		System.out.println("CSV file flod_entities_asfis.csv loaded in memory");
 		return map;
 	}
 }
