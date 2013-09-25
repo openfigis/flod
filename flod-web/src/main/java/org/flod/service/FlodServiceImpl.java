@@ -22,8 +22,20 @@ public class FlodServiceImpl implements FlodService {
 
 	@Override
 	public FetchLodUrlResponse fetchLodUrl(String codeList, String code) {
+		// precondition
+		if (!codeList.equals("asfis")) {
+			throw new FlodException("Yet only asfis is supported");
+		}
+		if (!map.containsKey(code)) {
+			throw new FlodException("No url found for this asfis code");
+		}
+
+		// logic
 		FetchLodUrlResponse r = new FetchLodUrlResponse();
 		r.setLodUrl(map.get(code));
+
+		// postcondition
+
 		return r;
 	}
 }
