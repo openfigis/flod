@@ -14,6 +14,8 @@ import org.junit.runner.RunWith;
 @AdditionalClasses(FlodServiceImpl.class)
 public class FlodServiceImplTest {
 
+	private String URL = "http://www.fao.org/figis/flod/entities/codedentity/3ff3592a-a24e-4da9-9ba7-983c09355018";
+
 	@Inject
 	FlodService flodService;
 
@@ -22,6 +24,6 @@ public class FlodServiceImplTest {
 		String codeList = "ASFIS";
 		String code = "TUN";
 		FetchLodUrlResponse response = flodService.fetchLodUrl(codeList, code);
-		assertEquals(FlodServiceImpl.URL, response.getLodUrl().toString());
+		assertEquals(URL, response.getLodUrl().toString());
 	}
 }
