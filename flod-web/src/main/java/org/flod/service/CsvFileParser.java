@@ -1,0 +1,39 @@
+package org.flod.service;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import au.com.bytecode.opencsv.CSVReader;
+
+public class CsvFileParser {
+
+	public Map<String, URL> read() {
+		InputStream stream = CsvFileParser.class.getResourceAsStream("/flod_entities_asfis.csv");
+
+		// CSVReader(Reader reader,
+		// char separator,
+		// char quotechar,
+		// int line)
+
+		CSVReader csvReader = new CSVReader(new InputStreamReader(stream), ',', ' ', 1);
+		List<String[]> myEntries;
+		Map<String, URL> map = new HashMap<String, URL>();
+		try {
+			myEntries = csvReader.readAll();
+			csvReader.close();
+			for (String[] row : myEntries) {
+				System.out.println(row[1]);
+				URL url = new URL(row[1]);
+				map.put(row[0], url);
+			}
+		} catch (IOException e) {
+			throw new FlodException(e);
+		}
+		return map;
+	}
+}
