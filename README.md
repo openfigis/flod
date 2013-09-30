@@ -1,4 +1,4 @@
-flod.
+FLOD
 ====
 
 Fisheries Linked Open Data
