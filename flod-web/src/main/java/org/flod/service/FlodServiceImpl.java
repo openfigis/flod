@@ -3,7 +3,7 @@ package org.flod.service;
 import java.net.URL;
 import java.util.Map;
 
-import org.flod.service.dto.FetchLodUrlResponse;
+import org.flod.service.dto.FetchURIresponse;
 import org.flod.service.dto.FlodService;
 
 /**
@@ -21,7 +21,7 @@ public class FlodServiceImpl implements FlodService {
 	}
 
 	@Override
-	public FetchLodUrlResponse fetchLodUrl(String codeList, String code) {
+	public FetchURIresponse fetchURI(String codeList, String code) {
 		// precondition
 		if (!codeList.equals("asfis")) {
 			throw new FlodException("Yet only asfis is supported");
@@ -31,8 +31,8 @@ public class FlodServiceImpl implements FlodService {
 		}
 
 		// logic
-		FetchLodUrlResponse r = new FetchLodUrlResponse();
-		r.setLodUrl(map.get(code));
+		FetchURIresponse r = new FetchURIresponse();
+		r.setURI(map.get(code.toUpperCase()));
 
 		// postcondition
 
