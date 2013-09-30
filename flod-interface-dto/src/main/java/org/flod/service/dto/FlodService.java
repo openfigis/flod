@@ -3,7 +3,7 @@
  */
 package org.flod.service.dto;
 
-import org.flod.service.dto.FetchLodUrlResponse;
+import org.flod.service.dto.FetchURIresponse;
 
 /**
  * @author Erik van Ingen
@@ -11,6 +11,6 @@ import org.flod.service.dto.FetchLodUrlResponse;
  */
 public interface FlodService {
 
-	public FetchLodUrlResponse fetchLodUrl(String codeList, String code);
+	public FetchURIresponse fetchURI(String codeList, String code);
 
 }

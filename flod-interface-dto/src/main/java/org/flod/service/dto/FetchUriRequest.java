@@ -7,7 +7,7 @@ package org.flod.service.dto;
  * @author Erik van Ingne
  * 
  */
-public class FetchLodUriRequest {
+public class FetchUriRequest {
 	private String codelist;
 	private String code;
 
