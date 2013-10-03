@@ -9,12 +9,5 @@ import org.junit.runner.RunWith;
 @AdditionalClasses(FlodServiceImpl.class)
 public class FlodServiceImplTest extends FlodAbstractServiceTest {
 
-	// @Inject
-	// FlodService flodService;
-	//
-	// @Before
-	// public void before() {
-	// this.service = flodService;
-	// }
 
 }

@@ -16,7 +16,7 @@ public abstract class FlodAbstractServiceTest {
 
 	@Test
 	public void testFetchLodUrl() {
-		String codeList = "ASFIS";
+		String codeList = "asfis";
 		String code = "TUN";
 		FetchURIresponse response = flodService.fetchURI(codeList, code);
 		assertEquals(URI, response.getURI().toString());
