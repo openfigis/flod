@@ -1,0 +1,71 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>askflod</artifactId>
+	<groupId>flod-4-ices</groupId>
+	<packaging>war</packaging>
+	<version>0.0.1</version>
+	<url>http://maven.apache.org</url>
+	<repositories>
+		<repository>
+			<id>apache-jena</id>
+			<name>apache-jena</name>
+			<url>https://repository.apache.org/content/repositories/public/org/apache/jena/</url>
+		</repository>
+	</repositories>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.2</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.fao.figis.flod</groupId>
+			<artifactId>flod_server</artifactId>
+			<version>0.7.5</version>
+			<scope>system</scope>
+			<systemPath>C:\Users\vaningen\git\flod\askflod\src\main\webapp\WEB-INF\lib\flod_server-0.7.5.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.jena</groupId>
+			<artifactId>jena-arq</artifactId>
+			<version>2.9.0-incubating</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.jena</groupId>
+			<artifactId>jena-larq</artifactId>
+			<version>1.0.0-incubating</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.json-lib</groupId>
+			<artifactId>json-lib</artifactId>
+			<version>2.4</version>
+			<classifier>jdk15</classifier>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpmime</artifactId>
+			<version>4.2.1</version>
+			<type>jar</type>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.solr</groupId>
+			<artifactId>solr-solrj</artifactId>
+			<version>3.6.1</version>
+			<type>jar</type>
+		</dependency>
+
+	</dependencies>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+</project>
+
