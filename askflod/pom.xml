@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
@@ -69,3 +70,27 @@
 	</properties>
 </project>
 
+=======
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+		<groupId>org.flod</groupId>
+		<version>0.1</version>
+
+	<artifactId>askflod</artifactId>
+	<packaging>war</packaging>
+
+	<properties>
+		<jersey.version>2.17</jersey.version>
+	</properties>
+
+	<dependencies>
+
+	
+	</dependencies>
+
+
+	
+</project>
+>>>>>>> branch 'master' of https://github.com/openfigis/flod.git
